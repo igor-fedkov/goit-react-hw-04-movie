@@ -1,0 +1,14 @@
+.container {
+  padding: 10px 0;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+}
+
+.list {
+  margin: 10px 0;
+  
+}
+
+.link {
+  color: blue;
+}

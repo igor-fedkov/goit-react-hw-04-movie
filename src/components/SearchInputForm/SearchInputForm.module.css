@@ -1,0 +1,23 @@
+.form {
+  margin-top: 10px;
+}
+
+.input {
+  padding: 5px;
+  min-width: 300px;
+  font-size: 14px;
+  border: 1px solid grey;
+}
+
+.input:focus {
+  border-top: 3px solid rgb(126, 167, 255);
+  border-right: 1px solid rgb(126, 167, 255);
+  border-bottom: 3px solid rgb(126, 167, 255);
+  outline: none;
+
+}
+
+.button {
+  padding: 5px;
+  font-size: 14px;
+}

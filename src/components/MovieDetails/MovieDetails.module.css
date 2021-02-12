@@ -1,0 +1,22 @@
+.poster {
+  /* display: block; */
+}
+
+.container {
+  display: flex;
+}
+
+.description {
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.title {
+  margin: 0;
+}
+
+.overview, 
+.genres {
+  font-size: 1.2em;
+  font-weight: 700;
+}
