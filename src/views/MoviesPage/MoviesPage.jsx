@@ -62,7 +62,7 @@ class MoviesPage extends Component {
     return (
       <>
         <SearchInputForm onSearch={this.onSearch} />
-        {<MoviesItemList movies={movies} url={match.url} />}
+        {<MoviesItemList movies={movies} />}
         {searchQuery && movies.length === 0 && <p>{`No data about "${searchQuery}"`}</p>}
       </>
     );

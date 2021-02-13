@@ -3,6 +3,8 @@ import s from './AdditionalInformationNav.module.css';
 
 const AdditionalInformationNav = ({match, location}) => {
   const { url } = match;
+
+  const previousLocation = location.state.from;
   
   return (
     <div className={s.container}>
@@ -12,13 +14,17 @@ const AdditionalInformationNav = ({match, location}) => {
           <Link className={s.link}
             to={{
               pathname: `${url}/cast`,
-              state: (location)
+              state: { from: previousLocation}
             }}>
             Cast
           </Link>
         </li>
         <li>
-          <Link className={s.link} to={`${url}/reviews`}>Reviews</Link>
+          <Link className={s.link}
+            to={{
+              pathname: `${url}/reviews`,
+              state: { from: previousLocation}
+            }}>Reviews</Link>
         </li>
       </ul>
     </div>
